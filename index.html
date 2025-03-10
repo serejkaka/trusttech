@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrustTech - Надежная техника</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .hero {
+      background: url('https://picsum.photos/600/300') center/cover no-repeat;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h2 {
+      font-size: 28px;
+      margin: 0;
+      background: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .container {
+      padding: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    .product-card h3 {
+      font-size: 16px;
+      margin: 10px 0 0;
+    }
+    .product-card p {
+      font-size: 14px;
+      margin: 5px 0 0;
+      color: #777;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TrustTech</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Товары</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <h2>Надежная техника для умных людей</h2>
+  </section>
+  
+  <div class="container">
+    <h2>Наши товары</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150?text=iPhone" alt="iPhone">
+        <h3>iPhone</h3>
+        <p>Отличное качество</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150?text=Google+Pixel" alt="Google Pixel">
+        <h3>Google Pixel</h3>
+        <p>Высокая производительность</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150?text=Samsung" alt="Samsung">
+        <h3>Samsung</h3>
+        <p>Надежные решения</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150?text=Телевизор" alt="Телевизор">
+        <h3>Телевизор</h3>
+        <p>Качественная картинка</p>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 TrustTech. Все права защищены.</p>
+    <p>Контакты: info@trusttech.example</p>
+  </footer>
+</body>
+</html>
