@@ -1,103 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>TrustTech - Premium Electronics</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITechStore - Premium Electronics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>TrustTech</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header>
+        <h1>ITechStore</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="showSection('phones')">Телефоны</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('tablets')">Планшеты</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('laptops')">Ноутбуки</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('apple')">Apple</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('google')">Google</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Премиальная техника по выгодным ценам</h2>
+    </section>
+
+    <!-- Products Sections -->
+    <div id="phones" class="product-section">
+        <h2>Телефоны</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/iphone.jpg" alt="iPhone 15">
+                <h3>iPhone 15</h3>
+                <p class="price">$899</p>
+                <button>Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/samsung.jpg" alt="Samsung Galaxy S23">
+                <h3>Samsung Galaxy S23</h3>
+                <p class="price">$799</p>
+                <button>Купить</button>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Premium Electronics for You</h2>
-      <p>Get the best tech at unbeatable prices</p>
+    <div id="tablets" class="product-section" style="display:none;">
+        <h2>Планшеты</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/ipad.jpg" alt="iPad Pro">
+                <h3>iPad Pro</h3>
+                <p class="price">$799</p>
+                <button>Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/samsung-tablet.jpg" alt="Samsung Tablet">
+                <h3>Samsung Tablet</h3>
+                <p class="price">$499</p>
+                <button>Купить</button>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- Products Section -->
-  <section id="products" class="products">
-    <h2>Featured Products</h2>
-    <div class="product-cards">
-      <!-- Product 1: iPhone 13 -->
-      <div class="product-card">
-        <a href="product1.html">
-          <img src="https://www.apple.com/v/iphone-13/a/images/overview/hero/hero_endframe__dnkco7sl7dq6_large_2x.jpg" alt="iPhone 13">
-          <h3>iPhone 13</h3>
-          <p class="price">$799</p>
-        </a>
-      </div>
-      
-      <!-- Product 2: iPhone 13 Pro -->
-      <div class="product-card">
-        <a href="product2.html">
-          <img src="https://www.apple.com/v/iphone-13/a/images/overview/hero/hero_endframe__dnkco7sl7dq6_large_2x.jpg" alt="iPhone 13 Pro">
-          <h3>iPhone 13 Pro</h3>
-          <p class="price">$999</p>
-        </a>
-      </div>
-
-      <!-- Product 3: Samsung Galaxy S21 -->
-      <div class="product-card">
-        <a href="product3.html">
-          <img src="https://www.samsung.com/latin_en/smartphones/galaxy-s21-5g/" alt="Samsung Galaxy S21">
-          <h3>Samsung Galaxy S21</h3>
-          <p class="price">$799</p>
-        </a>
-      </div>
-
-      <!-- Product 4: Google Pixel 6 -->
-      <div class="product-card">
-        <a href="product4.html">
-          <img src="https://store.google.com/preview/US/pixel_6" alt="Google Pixel 6">
-          <h3>Google Pixel 6</h3>
-          <p class="price">$599</p>
-        </a>
-      </div>
+    <div id="laptops" class="product-section" style="display:none;">
+        <h2>Ноутбуки</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/macbook.jpg" alt="MacBook Pro 16">
+                <h3>MacBook Pro 16</h3>
+                <p class="price">$2499</p>
+                <button>Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/dell-laptop.jpg" alt="Dell XPS 13">
+                <h3>Dell XPS 13</h3>
+                <p class="price">$1399</p>
+                <button>Купить</button>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We offer premium electronics at unbeatable prices with top-notch customer service. Find the best deals on tech today!</p>
+    <div id="apple" class="product-section" style="display:none;">
+        <h2>Apple</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/iphone.jpg" alt="iPhone 15">
+                <h3>iPhone 15</h3>
+                <p class="price">$899</p>
+                <button>Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/macbook.jpg" alt="MacBook Pro 16">
+                <h3>MacBook Pro 16</h3>
+                <p class="price">$2499</p>
+                <button>Купить</button>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Email: info@trusttech.com</p>
-      <p>Phone: +1 (800) 123-4567</p>
+    <div id="google" class="product-section" style="display:none;">
+        <h2>Google</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/google-pixel.jpg" alt="Google Pixel 6">
+                <h3>Google Pixel 6</h3>
+                <p class="price">$699</p>
+                <button>Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/google-laptop.jpg" alt="Google Pixelbook">
+                <h3>Google Pixelbook</h3>
+                <p class="price">$999</p>
+                <button>Купить</button>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 TrustTech. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ITechStore. Все права защищены.</p>
+    </footer>
 
-  <script src="scripts.js"></script>
+    <script>
+        // Function to show the selected section and hide others
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.product-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
 </body>
 </html>
